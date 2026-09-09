@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulir awal untuk mahasiswa yang ingin mengikuti proses kaderisasi.">
+  <title>Daftar Jadi Kader | HMI Komisariat UNPI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="brand" href="index.html">HMI <span>UNPI</span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+  <div class="nav-menu" id="navMenu">
+    <a href="index.html">🏠 Beranda</a>
+    <a href="tentang.html">🏛️ Tentang</a>
+    <a href="berita.html">📰 Berita</a>
+    <a href="agenda.html">📅 Agenda</a>
+    <a href="galeri.html">📸 Galeri</a>
+    <a href="struktur.html">👥 Struktur</a>
+    <a href="kontak.html">📞 Kontak</a>
+    <a href="sosial.html">🟢 WA & IG</a>
+    <a href="sejarah.html">📖 Sejarah</a>
+    <a href="kader.html">👤 Database Kader</a>
+    <a href="materi.html">📚 Materi Wajib</a>
+    <a class="nav-daftar" href="daftar.html">Daftar Jadi Kader</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <img src="assets/logo.png" class="hero-logo" alt="Logo HMI Komisariat UNPI">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span>HIMPUNAN MAHASISWA ISLAM</span>
+    <h1>Daftar Jadi Kader</h1>
+    <p>Formulir awal untuk mahasiswa yang ingin mengikuti proses kaderisasi.</p>
+  </div>
+</header>
+<main class="container">
+
+<section class="section narrow">
+  <form class="form" id="formDaftar">
+    <label>Nama Lengkap<input required name="nama" placeholder="Nama lengkap"></label>
+    <label>Nomor WhatsApp<input required name="wa" placeholder="08xxxxxxxxxx"></label>
+    <label>Program Studi<input required name="prodi" placeholder="Program studi"></label>
+    <label>Angkatan<select name="angkatan"><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>Lainnya</option></select></label>
+    <label>Alasan Bergabung<textarea required name="alasan" rows="5" placeholder="Ceritakan alasan ingin bergabung..."></textarea></label>
+    <button class="btn" type="submit">Kirim Pendaftaran</button>
+    <p id="pesanForm"></p>
+  </form>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <img src="assets/logo.png" alt="Logo HMI Komisariat UNPI" class="footer-logo">
+    <div>
+      <h3>HMI KOMISARIAT UNPI</h3>
+      <p>Berproses • Berorganisasi • Berkontribusi</p>
+    </div>
+  </div>
+  <p class="copyright">© <span id="tahun"></span> HMI Komisariat UNPI</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

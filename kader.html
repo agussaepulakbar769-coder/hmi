@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pencarian, filter angkatan, filter status, dan statistik kader.">
+  <title>Database Kader | HMI Komisariat UNPI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="brand" href="index.html">HMI <span>UNPI</span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+  <div class="nav-menu" id="navMenu">
+    <a href="index.html">🏠 Beranda</a>
+    <a href="tentang.html">🏛️ Tentang</a>
+    <a href="berita.html">📰 Berita</a>
+    <a href="agenda.html">📅 Agenda</a>
+    <a href="galeri.html">📸 Galeri</a>
+    <a href="struktur.html">👥 Struktur</a>
+    <a href="kontak.html">📞 Kontak</a>
+    <a href="sosial.html">🟢 WA & IG</a>
+    <a href="sejarah.html">📖 Sejarah</a>
+    <a href="kader.html">👤 Database Kader</a>
+    <a href="materi.html">📚 Materi Wajib</a>
+    <a class="nav-daftar" href="daftar.html">Daftar Jadi Kader</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <img src="assets/logo.png" class="hero-logo" alt="Logo HMI Komisariat UNPI">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span>HIMPUNAN MAHASISWA ISLAM</span>
+    <h1>Database Kader HMI Komisariat UNPI</h1>
+    <p>Pencarian, filter angkatan, filter status, dan statistik kader.</p>
+  </div>
+</header>
+<main class="container">
+
+<section class="section">
+  <div class="stats">
+    <div><b id="totalKader">0</b><span>Total Kader</span></div>
+    <div><b id="aktifKader">0</b><span>Kader Aktif</span></div>
+    <div><b id="jumlahAngkatan">0</b><span>Angkatan</span></div>
+  </div>
+  <div class="filters">
+    <input id="cariKader" type="search" placeholder="🔎 Cari nama kader...">
+    <select id="filterAngkatan"><option value="semua">Semua Angkatan</option></select>
+    <select id="filterStatus"><option value="semua">Semua Status</option><option value="Aktif">Aktif</option><option value="Alumni">Alumni</option></select>
+  </div>
+  <div id="daftarKader" class="kader-grid"></div>
+  <p class="warning">Untuk website publik, hindari menampilkan NIK, alamat rumah, nomor identitas, atau data sensitif kader.</p>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <img src="assets/logo.png" alt="Logo HMI Komisariat UNPI" class="footer-logo">
+    <div>
+      <h3>HMI KOMISARIAT UNPI</h3>
+      <p>Berproses • Berorganisasi • Berkontribusi</p>
+    </div>
+  </div>
+  <p class="copyright">© <span id="tahun"></span> HMI Komisariat UNPI</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
